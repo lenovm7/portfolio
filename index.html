@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leno V.M. | Mechatronics Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+            --border-color: #334155;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: rgba(15, 23, 42, 0.9); position: sticky; top: 0; backdrop-filter: blur(8px); border-bottom: 1px solid var(--border-color); z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .logo { font-size: 1.4rem; font-weight: 700; }
+        .logo span { color: var(--accent); }
+        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 20px; transition: color 0.3s; }
+        nav a:hover { color: var(--accent); }
+        .hero { padding: 80px 0 50px; text-align: center; }
+        .hero h2 { font-size: 2.8rem; margin-bottom: 10px; }
+        .highlight { color: var(--accent); }
+        .subtitle { color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 25px; }
+        .btn { display: inline-block; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+        .primary-btn { background-color: var(--accent); color: #0f172a; }
+        .primary-btn:hover { background-color: var(--accent-hover); color: #fff; }
+        .secondary-btn { border: 1px solid var(--border-color); color: var(--text-primary); margin-left: 10px; }
+        .secondary-btn:hover { background-color: var(--card-bg); }
+        .section { padding: 50px 0; }
+        .section-title { font-size: 1.8rem; margin-bottom: 25px; border-left: 4px solid var(--accent); padding-left: 12px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+        .card h4 { color: var(--accent); font-size: 1.2rem; margin-bottom: 8px; }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 12px; }
+        .card ul { list-style: none; margin-top: 10px; }
+        .card li { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 6px; position: relative; padding-left: 16px; }
+        .card li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .tags span { background-color: rgba(56, 189, 248, 0.1); color: var(--accent); padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; }
+        .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .skill-category { background-color: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); }
+        .skill-category h4 { margin-bottom: 12px; color: var(--accent); }
+        .skill-category ul { list-style: none; }
+        .skill-category li { color: var(--text-secondary); margin-bottom: 8px; position: relative; padding-left: 16px; }
+        .skill-category li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+        footer { text-align: center; padding: 30px 0; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Leno V.M.<span>.mecha</span></h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Hi, I'm <span class="highlight">Leno V.M.</span></h2>
+            <p class="subtitle">Aspiring Mechatronics Engineer | Embedded Systems & Automation</p>
+            <div>
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#experience" class="btn secondary-btn">Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container section">
+        <h3 class="section-title">About Me</h3>
+        <div class="card">
+            <p>Mechatronics Engineering student (B.Tech 2024-2028, CGPA: 7.6/10 at Jyothi Engineering College) with hands-on experience in embedded systems, industrial automation, electromechanical prototyping, and machine learning.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="container section">
+        <h3 class="section-title">Experience</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Production Intern</h4>
+                <p><strong>SFO Technologies Pvt. Ltd.</strong> (Transformers & Inductors Division)</p>
+                <ul>
+                    <li>Assisted in assembly/production of electromagnetic relays for smart energy meters.</li>
+                    <li>Handled Current Transformer (CT) components; conducted continuity and mechanical strength checks.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Industry 4.0 Intern</h4>
+                <p><strong>TATA JYOTHI IIIC</strong> (Jyothi Engineering College)</p>
+                <ul>
+                    <li>Gained training in industrial robotics, automated manufacturing workflows, and CNC machining operations.</li>
+                    <li>Acquired technical knowledge in embedded systems architecture for real-time control.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container section">
+        <h3 class="section-title">Projects</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Smart Plant Watering System</h4>
+                <p>Designed and developed an automated soil-moisture sensing system for agricultural resource management.</p>
+                <div class="tags">
+                    <span>Embedded Systems</span>
+                    <span>IoT</span>
+                    <span>Transistors / Actuators</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container section">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4>Microcontrollers</h4>
+                <ul>
+                    <li>Arduino</li>
+                    <li>STM32</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Programming</h4>
+                <ul>
+                    <li>Python, C++</li>
+                    <li>JavaScript, SQL, HTML</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Engineering Software</h4>
+                <ul>
+                    <li>MATLAB</li>
+                    <li>Fusion 360, Tinkercad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Leno V.M. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
